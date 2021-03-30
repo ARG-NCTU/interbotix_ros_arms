@@ -102,3 +102,7 @@ include_directories(
 add_executable(arm_node src/arm_node.cpp src/arm_obj.cpp src/pid.cpp)
 target_link_libraries(arm_node ${catkin_LIBRARIES} ${YAML_CPP_LIBRARIES})
 add_dependencies(arm_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(arm_node_vx300s_short src/arm_node.cpp src/arm_obj_vx300s_short.cpp src/pid.cpp)
+target_link_libraries(arm_node_vx300s_short ${catkin_LIBRARIES} ${YAML_CPP_LIBRARIES})
+add_dependencies(arm_node_vx300s_short ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
