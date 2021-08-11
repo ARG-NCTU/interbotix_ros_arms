@@ -1,7 +1,7 @@
 <launch>
 
   <arg name="robot_name"                         default="vx300s"/>
-  <arg name="robot_model"                        default="vx300s_short"/>
+  <arg name="robot_model"                        default="vx300s"/>
   <arg name="arm_operating_mode"                 default="position"/>
   <arg name="arm_profile_velocity"               default="131"/>
   <arg name="arm_profile_acceleration"           default="15"/>
